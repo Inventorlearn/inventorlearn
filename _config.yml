@@ -1,0 +1,29 @@
+# --- Informations générales ---
+title: "Project of Paul"
+email: "paul.david130305@gmail.com"
+description: >-
+  This site is for the person who wants to learn and discover
+  a lot of things about “Innovation and Invention”.
+baseurl: ""                     # laisser vide si le dépôt GitHub s’appelle paul.github.io
+url: "https://inventorlearn.github.io"                         # à remplacer plus tard par https://inventorlearn.github.io
+youtube_username: "Inventorlearn"
+github_username:  "Inventorlearn"
+
+# --- Construction du site ---
+theme: minima
+
+plugins:
+  - jekyll-feed                 # chaque plugin commence par "- "
+
+# --- Collections personnalisées ---
+collections:
+  projets:
+    output: true
+    permalink: /projets/:path/
+  cours:
+    output: true
+    permalink: /cours/:name/
+
+# --- Options Sass (masque les warnings) ---
+sass:
+  quiet_deps: true

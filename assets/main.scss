@@ -1,0 +1,7 @@
+/* Centrer la barre de navigation */
+.site-nav {
+  display: flex;
+  justify-content: center;   /* place les liens au milieu */
+}
+
+.site-nav .page-link { margin: 0 1rem; }   /* petit écart entre liens */
