@@ -1,0 +1,27 @@
+/* ───────── Couleurs (facultatif) ───────── */
+$brand-color      : #3b82f6;   // bleu primaire
+$text-color       : #1f2937;   // gris anthracite
+$background-color : #f9fafb;   // gris très clair
+
+/* ─── Barre de navigation centrée ─── */
+.site-nav {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* ─── Premier titre d’une page un peu plus « hero » ─── */
+.page-content h1:first-of-type {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* ─── Cartes projets (bordure + rayon + largeur) ─── */
+.card {
+  border: 1px solid lighten($text-color, 60%);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 650px;
+}
