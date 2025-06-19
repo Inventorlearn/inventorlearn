@@ -18,24 +18,23 @@ github_username  : "Inventorlearn"
 ############################################################
 #  CONSTRUCTION DU SITE
 ############################################################
-theme   : minima
+remote_theme : "mmistakes/minimal-mistakes"
 
 plugins :
   - jekyll-feed          # flux RSS/Atom auto
-
+  - jekyll-include-cache
+ 
 ############################################################
-#  COLLECTIONS PERSONNALISÉES
+#  NAVIGATION DU BANDEAU
 ############################################################
-collections :
-  projets :
-    output    : true
-    permalink : /projets/:path/
-  cours :
-    output    : true
-    permalink : /cours/:name/
-
+  header_pages:
+    - index.md
+    - _pages/projets.md
+    - _pages/cours.md
+	
 ############################################################
-#  OPTIONS SASS (supprime les warnings de dépendances)
+#  APPARENCE RAPIDE
 ############################################################
-sass :
-  quiet_deps : true
+  minimal_mistakes_skin : "air"   # tu pourras essayer "dark", "sunrise", etc.
+  search : true
+  
