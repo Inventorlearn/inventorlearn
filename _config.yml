@@ -1,29 +1,41 @@
-# --- Informations générales ---
-title: "Project of Paul"
-email: "paul.david130305@gmail.com"
-description: >-
+############################################################
+#  INFORMATION GÉNÉRALE
+############################################################
+title       : "Project of Paul"
+email       : "paul.david130305@gmail.com"
+description : >-
   This site is for the person who wants to learn and discover
   a lot of things about “Innovation and Invention”.
-baseurl: ""                     # laisser vide si le dépôt GitHub s’appelle paul.github.io
-url: "https://inventorlearn.github.io"                         # à remplacer plus tard par https://inventorlearn.github.io
-youtube_username: "Inventorlearn"
-github_username:  "Inventorlearn"
 
-# --- Construction du site ---
-theme: minima
+# URL publiques — adapte uniquement les lignes ci-dessous
+url     : "https://inventorlearn.github.io"   # domaine sans slash final
+baseurl : "/inventorlearn"                                  # "/inventorlearn" si le dépôt ≠ *.github.io
 
-plugins:
-  - jekyll-feed                 # chaque plugin commence par "- "
+# Profils sociaux affichés par le thème « minima »
+youtube_username : "Inventorlearn"
+github_username  : "Inventorlearn"
 
-# --- Collections personnalisées ---
-collections:
-  projets:
-    output: true
-    permalink: /projets/:path/
-  cours:
-    output: true
-    permalink: /cours/:name/
+############################################################
+#  CONSTRUCTION DU SITE
+############################################################
+theme   : minima
 
-# --- Options Sass (masque les warnings) ---
-sass:
-  quiet_deps: true
+plugins :
+  - jekyll-feed          # flux RSS/Atom auto
+
+############################################################
+#  COLLECTIONS PERSONNALISÉES
+############################################################
+collections :
+  projets :
+    output    : true
+    permalink : /projets/:path/
+  cours :
+    output    : true
+    permalink : /cours/:name/
+
+############################################################
+#  OPTIONS SASS (supprime les warnings de dépendances)
+############################################################
+sass :
+  quiet_deps : true
